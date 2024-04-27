@@ -3,12 +3,27 @@
   <display-name>ComputApp</display-name>
   
 <servlet>
-		<servlet-name>calc</servlet-name>
+		<servlet-name>Calc</servlet-name>
 		<servlet-class>com.advance.program.BasicCalculationServlet</servlet-class>
 	</servlet>
 
-	<servlet-mapping>
-		<servlet-name>calc</servlet-name>
+
+<servlet-mapping>
+		<servlet-name>Calc</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+
+
+<servlet>	
+		<servlet-name>AdCalc</servlet-name>
+		<servlet-class>com.advance.program.AdvancedCalcServlet</servlet-class>
+	</servlet>
+	
+			<servlet-mapping>
+		<servlet-name>AdCalc</servlet-name>
+		<url-pattern>/square</url-pattern>
+	</servlet-mapping>
+
+
+
 </web-app>
