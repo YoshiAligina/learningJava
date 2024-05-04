@@ -48,6 +48,13 @@
 		<url-pattern>/square</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>addBook</servlet-name>
+		<servlet-class>com.advance.controller.InsertBookDetails</servlet-class>
+	</servlet>
 
-
+	<servlet-mapping>
+		<servlet-name>addBook</servlet-name>
+		<url-pattern>/addBookDetails</url-pattern>
+	</servlet-mapping>
 </web-app>
