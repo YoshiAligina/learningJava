@@ -22,10 +22,10 @@
 		<servlet-name>config</servlet-name>
 		<url-pattern>/book</url-pattern>
 	</servlet-mapping>
-<context-param>
-	<param-name>SecondBookName</param-name>
-	<param-value>Mathematics 2</param-value>
-</context-param>
+	<context-param>
+		<param-name>SecondBookName</param-name>
+		<param-value>Mathematics 2</param-value>
+	</context-param>
 	<servlet>
 		<servlet-name>Calc</servlet-name>
 		<servlet-class>com.advance.program.BasicCalculationServlet</servlet-class>
@@ -56,5 +56,14 @@
 	<servlet-mapping>
 		<servlet-name>addBook</servlet-name>
 		<url-pattern>/addBookDetails</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getBookDetails</servlet-name>
+		<servlet-class>com.advance.controller.GetBookDetails</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>getBookDetails</servlet-name>
+		<url-pattern>/getBookDetails</url-pattern>
 	</servlet-mapping>
 </web-app>
