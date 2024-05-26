@@ -13,4 +13,8 @@ public interface BookService
 	
 	List<BookDetails> getAllBookDetails();
 	
+	boolean updateBookDetails(BookDetailsDTO bookDetailsDto);
+	
+	BookDetails getBookDetailsById(Integer id);
+	
 }

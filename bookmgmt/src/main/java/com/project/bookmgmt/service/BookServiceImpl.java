@@ -1,6 +1,7 @@
 package com.project.bookmgmt.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,9 +42,33 @@ public class BookServiceImpl implements BookService {
 		return true;
 	}
 
-	public List<BookDetails> getAllBookDetails()
-	{
+	public List<BookDetails> getAllBookDetails() {
 		List<BookDetails> bookDetails = bookDetailsRepository.findAll();
 		return bookDetails;
+	}
+
+	public boolean updateBookDetails(BookDetailsDTO bookDetailsDto) {
+		try {
+			Optional<BookDetails> bookDetails = bookDetailsRepository.findById(bookDetailsDto.getId());
+
+			bookDetails.get().setBookName(bookDetailsDto.getBookName());
+			bookDetails.get().setPrice(bookDetailsDto.getPrice());
+			bookDetails.get().setRemarks(bookDetailsDto.getRemarks());
+			bookDetailsRepository.save(bookDetails.get());
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public BookDetails getBookDetailsById(Integer id) 
+	{
+		Optional<BookDetails> response = bookDetailsRepository.findById(id);
+
+		
+		return response.get();
 	}
 }
