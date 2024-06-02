@@ -74,7 +74,10 @@ body {
 			</ul>
 
 		</div>
-
+		<div style="float: right;">
+			<input type="button" class="button" value="Add Book Details"
+				id="addBookDetails">
+		</div>
 
 		<br> <br>
 		<div>
@@ -92,6 +95,61 @@ body {
 		</div>
 
 
+		<div class="form-popup" id="myForm" align="center">
+			<form>
+				<div class="container">
+					<h1 align="left">Book Details</h1>
+					<hr>
+					<div class="row">
+						<div class="column">
+							<label class="required-field" for="bookname"><b>Book
+									Name</b></label> <input type="text" placeholder="Enter Book Name"
+								name="bookname" id="bookname" required>
+						</div>
+						<div class="column">
+							<label class="required-field" for="bookprice"><b>Book
+									Price</b></label> <input type="text" placeholder="Enter book price"
+								name="bookprice" id="bookprice" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<label class="required-field" for="category"><b>Book
+									Category</b></label><br> <br> <select name="category"
+								id="category">
+								<option value="">Select</option>
+								<option value="1">Biography</option>
+								<option value="2">History</option>
+								<option value="3">Business</option>
+								<option value="4">Fantasy</option>
+								<option value="5">YA</option>
+								<option value="6">Sci-Fi</option>
+								<option value="7">Kids</option>
+							</select>
+						</div>
+						<div class="column">
+							<label class="required-field" for="remarks"><b>Remarks</b></label>
+							<input type="text" placeholder="Enter remarks" name="remarks"
+								id="remarks" required>
+						</div>
+					</div>
+					<div align="left">
+						<label class="required-field1" for="phone"><b>Indicates
+								mandatory fields</b></label>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="column">
+							<input type="button" class="registerbtn" value="Save"
+								id="saveBookDetails" />
+						</div>
+						<div class="column">
+							<button type="button" class="registerbtn" id="refreshPage">Close</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
 
 
 		<input type="hidden" id="bookid">
