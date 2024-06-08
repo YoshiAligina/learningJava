@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.project.bookmgmt.dto.BookDetailsDTO;
 import com.project.bookmgmt.model.BookDetails;
 import com.project.bookmgmt.service.BookService;
-import com.project.booksmgmt.dto.BookDetailsDTO;
 
 @Controller
 public class BookController {
