@@ -2,8 +2,8 @@ package com.project.bookmgmt.service;
 
 import java.util.List;
 
+import com.project.bookmgmt.dto.BookDetailsDTO;
 import com.project.bookmgmt.model.BookDetails;
-import com.project.booksmgmt.dto.BookDetailsDTO;
 
 public interface BookService 
 {

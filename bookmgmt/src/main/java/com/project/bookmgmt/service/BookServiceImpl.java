@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.project.bookmgmt.dto.BookDetailsDTO;
 import com.project.bookmgmt.model.BookDetails;
 import com.project.bookmgmt.repository.BookDetailsRepository;
-import com.project.booksmgmt.dto.BookDetailsDTO;
 
 @Service // Returns business logic
 public class BookServiceImpl implements BookService {
